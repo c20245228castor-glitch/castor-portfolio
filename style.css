@@ -1,0 +1,158 @@
+    body {
+        text-align: center;
+        background-color: burlywood;
+
+        ul {
+            list-style: none;
+        }
+
+        nav {
+            display: flex;
+            justify-content: stretch;
+            align-items: center;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+
+    }
+
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 50px;
+        margin: 50px;
+
+    }
+
+    main section {
+        flex: 1;
+        min-width: 280px;
+        border: 2px solid blueviolet;
+        background-color: antiquewhite;
+        font-style: italic;
+        padding: 30px
+    }
+
+
+
+    h2 {
+        font-size: 35px;
+        color: indianred;
+
+    }
+
+    p {
+        color: darkslategrey;
+        font-style: oblique;
+    }
+
+
+    h1 {
+        font-size: 75px;
+        color: brown;
+        border: 2px solid blueviolet;
+        border-radius: 40px;
+        margin-left: 300px;
+        margin-right: 300px;
+        background-color: antiquewhite;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-style: normal;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    footer {
+        background-color: brown;
+        color: aquamarine;
+        text-align: center;
+
+        padding: 20px;
+        border-top: 2;
+        font-size: 20px;
+
+    }
+
+    @media (max-width: 600px) {
+        nav {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        nav ul {
+            flex-direction: column;
+            text-align: center;
+        }
+
+
+        main {
+            padding: 15px;
+            margin: 10px;
+            gap: 20px;
+
+        }
+
+        main section {
+            flex: 1 1 100%;
+            min-width: 100%;
+        }
+
+        h1 {
+            font-size: 75px;
+            color: blue;
+        }
+
+        span {
+            font-size: 75 px;
+            color: green;
+        }
+    }
+
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 48px;
+            color: blue;
+        }
+    }
+
+    nav a {
+        transition: color 0.5s ease;
+    }
+
+    nav a:hover {
+        color: rgb(73, 112, 0);
+    }
+
+    button {
+        background-color: black;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 10px;
+        transition: background-color 0.5s ease;
+
+
+    }
+
+    button:hover {
+        background-color: green;
+        color: black;
+    }
